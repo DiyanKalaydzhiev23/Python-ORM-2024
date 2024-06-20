@@ -7,13 +7,23 @@
    zip -r project.zip . -x "*.idea*" -x "*venv*" -x "*__pycache__*"
 ```
 
+### Creation of Venv
 ```bash
-
-
-python3 -m venv ./venv
-source ./venv/bin/activate
-venv\Scripts\activate
+	python3 -m venv ./venv
+	source ./venv/bin/activate
+	venv\Scripts\activate
 ```
+
+---
+
+### dbshell on Docker
+
+```bash
+	docker exec -t <container_name> /bin/bash
+	psql -U your_user_me -d your_db_name
+```
+
+---
 
 ```
 
