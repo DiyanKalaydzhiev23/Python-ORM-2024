@@ -4,7 +4,7 @@
 
 ### Zip project on Mac/Linux
 ```bash
-   zip -r project.zip . -x "*.idea*" -x "*.venv*"
+   zip -r archive_name.zip . -x "*.idea*" -x "*venv*"
 ```
 
 ---
