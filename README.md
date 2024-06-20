@@ -7,6 +7,16 @@
    zip -r project.zip . -x "*.idea*" -x "*venv*" -x "*__pycache__*"
 ```
 
+```bash
+
+
+python3 -m venv ./venv
+source ./venv/bin/activate
+venv\Scripts\activate
+```
+
+```
+
 ---
 
 ### Zip project on Windows
