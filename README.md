@@ -4,14 +4,14 @@
 
 ### Zip project on Mac/Linux
 ```bash
-   zip -r archive_name.zip . -x "*.idea*" -x "*.venv*"
+   zip -r project.zip . -x "*.idea*" -x "*.venv*"
 ```
 
 ---
 
 ### Zip project on Windows
 ```bash
-   tar -czvf archive_name.zip --exclude='.idea' --exclude='venv' .
+   tar -czvf project.zip --exclude='.idea' --exclude='venv' .
 ```
 
 ---
