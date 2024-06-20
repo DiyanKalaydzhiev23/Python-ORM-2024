@@ -1,5 +1,21 @@
 # Python-ORM-2024
 
+# Important commands
+
+### Zip project on Mac/Linux
+```bash
+   zip -r archive_name.zip . -x "*.idea*" -x "*.venv*"
+```
+
+---
+
+### Zip project on Windows
+```bash
+   tar -czvf archive_name.zip --exclude='.idea' --exclude='venv' .
+```
+
+---
+
 # Helpers
 
 - [Populate Django DB Script](https://github.com/DiyanKalaydzhiev23/PopulateDjangoModel)
