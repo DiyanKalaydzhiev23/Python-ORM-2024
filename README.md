@@ -7,6 +7,15 @@
    zip -r project.zip . -x "*.idea*" -x "*venv*" -x "*__pycache__*"
 ```
 
+---
+
+### Zip project on Windows
+```bash
+   tar -czvf project.zip --exclude='.idea' --exclude='.venv' --exclude='__pycache__' .
+```
+
+---
+
 ### Creation of Venv
 ```bash
 	python3 -m venv ./venv
@@ -21,17 +30,6 @@
 ```bash
 	docker exec -t <container_name> /bin/bash
 	psql -U your_user_me -d your_db_name
-```
-
----
-
-```
-
----
-
-### Zip project on Windows
-```bash
-   tar -czvf project.zip --exclude='.idea' --exclude='venv' --exclude='__pycache__' .
 ```
 
 ---
