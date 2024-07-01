@@ -11,7 +11,7 @@
 
 ### Zip project on Windows
 ```bash
-   tar -czvf project.zip --exclude='.idea' --exclude='.venv' --exclude='__pycache__' .
+   tar.exe -a -cf project.zip main_app orm_skeleton caller.py manage.py requirements.txt
 ```
 
 ---
