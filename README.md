@@ -779,7 +779,7 @@ author_posts = author.post_set.all()
 
 1. SQL Alchemy - ORM - Object Relational Mapper
    - ORM - абстракция позволяваща ни да пишем SQL, чрез Python
-   - Core - грижи се за транзакциите, изпращането на заявки, sessions и database pooling
+   - Core - грижи се за транзакциите, изпращането на заявки и database pooling
 
 2. SetUp:
    1. ```pip install sqlalchemy```
