@@ -1,0 +1,14 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+    <section id="create">
+        <div class="form">
+            <h2>Add Category</h2>
+            <form class="create-form" action="{% url 'create_category' %}" method="POST">
+                {{ form }}
+                {% csrf_token %}
+                <button type="submit">Add Category</button>
+            </form>
+        </div>
+    </section>
+{% endblock %}
