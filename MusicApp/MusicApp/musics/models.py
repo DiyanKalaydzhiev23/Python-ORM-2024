@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, ForeignKey
+from sqlalchemy import Column, Integer, String, Float, ForeignKey, LargeBinary
 from sqlalchemy.orm import relationship
 from MusicApp.settings import Base, engine
 
@@ -45,6 +45,10 @@ class Song(Base):
     song_name = Column(
         String(100),
         nullable=False,
+    )
+
+    music_file_data = Column(
+        LargeBinary,
     )
 
     album_id = Column(

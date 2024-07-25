@@ -64,6 +64,11 @@ class SongBaseForm(forms.Form):
         choices=[],  # we overwrite that in the init
     )
 
+    music_file_data = forms.FileField(
+        label="Music File:",
+        required=True,
+    )
+
     @session_decorator(session)
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -75,10 +80,11 @@ class SongBaseForm(forms.Form):
 class SongCreateForm(SongBaseForm):
 
     @session_decorator(session)
-    def save(self):
+    def save(self, request):
         new_song = Song(
             song_name=self.cleaned_data['song_name'],
-            album_id=self.cleaned_data['album']
+            album_id=self.cleaned_data['album'],
+            music_file_data=request.FILES['music_file_data'].read()
         )
 
         session.add(new_song)

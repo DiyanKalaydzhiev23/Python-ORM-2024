@@ -12,5 +12,7 @@ urlpatterns = [
     ])),
     path('song/', include([
         path('create/', views.create_song, name='create song'),
+        path('play-song/<int:pk>', views.play_song, name="play song"),
+        path('serve-song/<int:pk>', views.serve_song, name='serve song'),
     ])),
 ]
